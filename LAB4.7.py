@@ -26,8 +26,7 @@ while x <= X_end:
         S += a
         if abs(a) <= eps:
             break
-    ln = math.log(1 - x)
-    print('|   {0}   |   {1}   |   {2}   |   {3}   |'.format(str(round(x, 4)), str(round(ln, 4)), str(round(-S, 4)), str(n)))
+    print('|   {0}   |   {1}   |   {2}   |   {3}   |'.format(str(round(x, 4)), str(round(math.log(1 - x), 4)), str(round(-S, 4)), str(n)))
     x += dX
 
 print('----------------------------------------')
